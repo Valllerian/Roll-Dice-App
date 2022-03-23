@@ -12,10 +12,10 @@ const RollDice = () => {
     setShaking(true);
     const numbers = ["one", "two", "three", "four", "five", "six"];
     setTimeout(function () {
-      let numberOne = setNumberOne(
+      setNumberOne(
         numbers[Math.floor(Math.random() * numbers.length)]
       );
-      let numberTwo = setNumberTwo(
+      setNumberTwo(
         numbers[Math.floor(Math.random() * numbers.length)]
       );
       setShaking(false);
