@@ -35,7 +35,11 @@ Main page of the app.
 
 ## Credits
 
-n\a
+Talwind instalation guide: 
+https://tailwindcss.com/docs/guides/create-react-app
+
+Random element from an array function: 
+https://stackoverflow.com/questions/5915096/get-a-random-item-from-a-javascript-array
 
 
 ## License
