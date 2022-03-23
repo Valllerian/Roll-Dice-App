@@ -18,8 +18,8 @@ const RollDice = () => {
     );
   }
   return (
-    <div>
-      <div className="RollDice">
+    <div className="grid place-items-center h-screen">
+      <div className="flex">
         <div>
           <Die number={numberOne} />
         </div>
@@ -27,7 +27,7 @@ const RollDice = () => {
           <Die number={numberTwo} />
         </div>
       </div>
-      <button onClick={handleClick}> Roll Dice!</button>
+      <button onClick={handleClick} className="ease inline-block cursor-pointer rounded-full bg-pink-600 px-8 py-3 text-7xl text-white transition duration-500 hover:bg-indigo-900"> Roll Dice!</button>
     </div>
   );
 };

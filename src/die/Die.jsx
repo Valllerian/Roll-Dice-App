@@ -2,12 +2,11 @@ import React from "react";
 import "./die.css";
 
 const Die = (props) => {
-  console.log(props.number);
   let number = props.number;
   return (
     <div>
-      <div>
-        <i className={`fas fa-dice-${number}`}></i>
+      <div className="mx-6 my-6">
+        <i className={`fas fa-dice-${number} fa-10x`}></i>
       </div>
     </div>
   );

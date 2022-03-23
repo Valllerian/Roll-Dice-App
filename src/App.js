@@ -4,7 +4,7 @@ import RollDice from "./rollDice/RollDice";
 
 function App() {
   return (
-    <div className="">
+    <div className="App">
       <RollDice />
     </div>
   );
