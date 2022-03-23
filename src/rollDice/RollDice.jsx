@@ -6,12 +6,14 @@ const RollDice = () => {
     const [numberOne, setNumberOne] = useState('one')
     const [numberTwo, setNumberTwo] = useState('one')
 
-    let handleclick = (e) => {
-    e.preventDefault();
+    function handleClick(e){
+        e.preventDefault();
+       
     const numbers = ['one', 'two', 'three', 'four', 'five', 'six']
 
-    let numberOne = numbers[Math.floor(Math.random()*numbers.length)];
-    let numberTwo = numbers[Math.floor(Math.random()*numbers.length)];
+    let numberOne = setNumberOne(numbers[Math.floor(Math.random()*numbers.length)]);
+    let numberTwo = setNumberTwo(numbers[Math.floor(Math.random()*numbers.length)]);
+   
     }
   return (
     <div>
@@ -23,7 +25,7 @@ const RollDice = () => {
           <Die number={numberTwo} />
         </div>
       </div>
-      <button onClick={handleclick}> Roll Dice!</button>
+      <button onClick={handleClick}> Roll Dice!</button>
     </div>
   );
 };
