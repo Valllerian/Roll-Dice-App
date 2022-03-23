@@ -3,21 +3,19 @@ import Die from "../die/Die";
 import "./rollDice.css";
 
 const RollDice = () => {
+
   const [numberOne, setNumberOne] = useState("one");
   const [numberTwo, setNumberTwo] = useState("one");
   const [shaking, setShaking] = useState(false);
 
   function handleClick(e) {
     e.preventDefault();
+    console.log("I`m rolling!");
     setShaking(true);
     const numbers = ["one", "two", "three", "four", "five", "six"];
     setTimeout(function () {
-      setNumberOne(
-        numbers[Math.floor(Math.random() * numbers.length)]
-      );
-      setNumberTwo(
-        numbers[Math.floor(Math.random() * numbers.length)]
-      );
+      setNumberOne(numbers[Math.floor(Math.random() * numbers.length)]);
+      setNumberTwo(numbers[Math.floor(Math.random() * numbers.length)]);
       setShaking(false);
     }, 1000);
   }
@@ -32,7 +30,7 @@ const RollDice = () => {
         </div>
       </div>
       <button
-        onClick={handleClick}
+        onClick={shaking ? null : handleClick}
         className="ease inline-block cursor-pointer rounded-full bg-pink-600 px-8 py-3 text-7xl text-white transition duration-500 hover:bg-indigo-900"
       >
         {" "}
