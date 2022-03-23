@@ -28,7 +28,7 @@ https://roll-dice-app.vercel.app/
 Main page of the app.
 
 <br>
-<img alt="Main page" src="./assets/image01.jpg" />
+<img alt="Main page" src="./assets/image01.gif" />
 <br>
 
 
