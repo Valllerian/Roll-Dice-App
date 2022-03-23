@@ -3,18 +3,20 @@ import Die from "../die/Die";
 import "./rollDice.css";
 
 const RollDice = () => {
-    const [numberOne, setNumberOne] = useState('one')
-    const [numberTwo, setNumberTwo] = useState('one')
+  const [numberOne, setNumberOne] = useState("one");
+  const [numberTwo, setNumberTwo] = useState("one");
 
-    function handleClick(e){
-        e.preventDefault();
-       
-    const numbers = ['one', 'two', 'three', 'four', 'five', 'six']
+  function handleClick(e) {
+    e.preventDefault();
+    const numbers = ["one", "two", "three", "four", "five", "six"];
 
-    let numberOne = setNumberOne(numbers[Math.floor(Math.random()*numbers.length)]);
-    let numberTwo = setNumberTwo(numbers[Math.floor(Math.random()*numbers.length)]);
-   
-    }
+    let numberOne = setNumberOne(
+      numbers[Math.floor(Math.random() * numbers.length)]
+    );
+    let numberTwo = setNumberTwo(
+      numbers[Math.floor(Math.random() * numbers.length)]
+    );
+  }
   return (
     <div>
       <div className="RollDice">

@@ -1,14 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-import RollDice from './rollDice/RollDice';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import logo from "./logo.svg";
+import "./App.css";
+import RollDice from "./rollDice/RollDice";
 
 function App() {
   return (
     <div className="">
-    <RollDice />
+      <RollDice />
     </div>
   );
 }
