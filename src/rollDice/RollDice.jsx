@@ -3,7 +3,6 @@ import Die from "../die/Die";
 import "./rollDice.css";
 
 const RollDice = () => {
-
   const [numberOne, setNumberOne] = useState("one");
   const [numberTwo, setNumberTwo] = useState("one");
   const [shaking, setShaking] = useState(false);
@@ -34,7 +33,7 @@ const RollDice = () => {
         className="ease inline-block cursor-pointer rounded-full bg-pink-600 px-8 py-3 text-7xl text-white transition duration-500 hover:bg-indigo-900"
       >
         {" "}
-        Roll Dice!
+        {!shaking ? 'Roll Dice!' : 'Rolling 0:'}
       </button>
     </div>
   );
