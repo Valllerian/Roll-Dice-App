@@ -4,7 +4,7 @@ import './rollDice.css'
 
 const RollDice = () => {
   return (
-    <div>RollDice</div>
+    <div><Die/></div>
   )
 }
 
